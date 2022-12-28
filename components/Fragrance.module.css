@@ -1,0 +1,10 @@
+.wrapper{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    cursor: pointer;
+}
+/* 
+.wrapper img {
+    
+} */

@@ -3,4 +3,25 @@ const nextConfig = {
   reactStrictMode: true,
 }
 
-module.exports = nextConfig
+// module.exports = {
+//   images: {
+//     domains: ['sephora.p.rapidapi.com'],
+//   },
+// }
+
+// module.exports = {
+//   images: {
+//     remotePatterns: [
+//       {
+//         protocol: 'https',
+//         hostname: 'www.sephora.com',
+//       },
+//     ],
+//   },
+// }
+
+module.exports = {
+  images: {
+    domains: ['www.sephora.com'],
+  },
+}
