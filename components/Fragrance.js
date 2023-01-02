@@ -2,16 +2,21 @@ import Link from 'next/link';
 import Image from 'next/image';
 import classes from './Fragrance.module.css'
 
-const Fragrance = ({ fragrance: {brandName, image450, rating, displayName, currentSku, productId } }) => (
-    
-    <Link href={`/fragrance/${productId}`} passHref>
+const Fragrance = ({ fragrance: {brandName, heroImage, image450, rating, displayName, currentSku, productId }, position }) => (
+    <>
+    <Link href={`/fragrance/${productId}`} passHref >
         <div className={classes['wrapper']}>
-            <div>
-        <Image src={image450} width={450} height={450} alt={displayName}/>
-            </div>
-        {image450}
+             <div className={classes['cardNumber']}>{position}</div>
+             <Image src='https://twicpics.celine.com/product-prd/images/large/6PC1H0805.37TT_1_100ML_PARADE.jpg' width='200' height='200' alt={displayName}/>
+             <div className={classes['description']}>
+                <h3>{displayName}</h3>
+                <h3>{brandName}</h3>
+                <span>Rating: {rating}</span>
+                <span>Price: {currentSku.listPrice}</span>
+             </div>
         </div>
     </Link>
+    </>
 )
 
 export default Fragrance;

@@ -1,16 +1,21 @@
-if (process.env.NODE_ENV !== 'production'){
-  require('longjohn');
-}
 import Fragrance from '../components/Fragrance'
+import classes from '../styles/Home.module.css'
 
 import { baseUrl, fetchApi } from '../utils/fetchApi';
 
 
 export default function Home({topFragranceMen, topFragranceWomen}) {
   return (
-    <div>
-      {topFragranceMen.map(fragrance => <Fragrance fragrance={fragrance} key={fragrance.productId} />)}
+    <>
+    <div className={classes['wrapper']}>
+    <h2>Top Men Fragrance</h2>
+      {topFragranceMen.map((fragrance, index) => <Fragrance position={index+1} fragrance={fragrance} key={fragrance.productId}/>)}
     </div>
+      <div className={classes['wrapper']}>
+        <h2>Top Men Fragrance</h2>
+        {topFragranceMen.map((fragrance, index) => <Fragrance position={index+1} fragrance={fragrance} key={fragrance.productId} />)}
+      </div>
+    </>
   )
 }
 

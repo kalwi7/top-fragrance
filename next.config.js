@@ -1,6 +1,13 @@
-/** @type {import('next').NextConfig} */
-const nextConfig = {
+// /** @type {import('next').NextConfig} */
+// const nextConfig = {
+//   reactStrictMode: true,
+// }
+
+module.exports = {
   reactStrictMode: true,
+  images:{
+    domains:['twicpics.celine.com'], 
+},
 }
 
 // module.exports = {
@@ -10,6 +17,7 @@ const nextConfig = {
 // }
 
 // module.exports = {
+//   reactStrictMode: true,
 //   images: {
 //     remotePatterns: [
 //       {
@@ -20,8 +28,8 @@ const nextConfig = {
 //   },
 // }
 
-module.exports = {
-  images: {
-    domains: ['www.sephora.com'],
-  },
-}
+// module.exports = {
+//   images: {
+//     domains: ['www.sephora.com'],
+//   },
+// }
