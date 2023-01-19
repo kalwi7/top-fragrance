@@ -1,14 +1,26 @@
-// /** @type {import('next').NextConfig} */
+// @type {import('next').NextConfig}
 // const nextConfig = {
 //   reactStrictMode: true,
 // }
 
+// module.exports = {
+//   reactStrictMode: true,
+//   images: {
+//     domains: ["www.sephora.com"],
+//   },
+// };
+
 module.exports = {
-  reactStrictMode: true,
-  images:{
-    domains:['twicpics.celine.com'], 
-},
-}
+  images: {
+    remotePatterns: [
+      {
+        protocol: "https",
+        hostname: "**",
+        pathname: "**",
+      },
+    ],
+  },
+};
 
 // module.exports = {
 //   images: {
@@ -21,15 +33,15 @@ module.exports = {
 //   images: {
 //     remotePatterns: [
 //       {
-//         protocol: 'https',
-//         hostname: 'www.sephora.com',
+//         protocol: "https",
+//         hostname: "www.sephora.com",
 //       },
 //     ],
 //   },
-// }
+// };
 
 // module.exports = {
 //   images: {
-//     domains: ['www.sephora.com'],
+//     domains: ["www.sephora.com"],
 //   },
-// }
+// };

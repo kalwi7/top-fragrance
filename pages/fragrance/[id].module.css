@@ -1,0 +1,27 @@
+.wrapper {
+  display: flex;
+}
+
+.imgWrapper {
+  margin: auto;
+}
+
+.image {
+}
+
+.description {
+  background-color: #ffe2cb;
+  padding: 1rem 2rem;
+}
+
+.details {
+  font-size: 1.3rem;
+  margin: 3rem 1rem;
+}
+
+.details span {
+  font-weight: 800;
+}
+
+.longDescription {
+}

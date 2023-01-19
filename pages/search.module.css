@@ -1,0 +1,11 @@
+.searchBar {
+  background-color: rgb(245, 245, 245);
+  text-align: center;
+}
+
+.searchText {
+  font-size: 1.2rem;
+  cursor: pointer;
+  padding: 0.5rem 0;
+  font-weight: 700;
+}
