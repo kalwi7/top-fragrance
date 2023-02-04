@@ -1,11 +1,13 @@
 import Fragrance from "../components/Fragrance";
 import classes from "../styles/Home.module.css";
 
+
 import { baseUrl, fetchApi } from "../utils/fetchApi";
 
 export default function Home({ topFragranceMen, topFragranceWomen }) {
   return (
     <>
+
       <div className={classes["wrapper"]}>
         <h2>Top Men Fragrance</h2>
         {topFragranceMen.map((fragrance, index) => (
@@ -17,7 +19,7 @@ export default function Home({ topFragranceMen, topFragranceWomen }) {
         ))}
       </div>
       <div className={classes["wrapper"]}>
-        <h2>Top Men Fragrance</h2>
+        <h2>Top Women Fragrance</h2>
         {topFragranceWomen.map((fragrance, index) => (
           <Fragrance
             position={index + 1}

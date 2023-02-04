@@ -43,17 +43,11 @@ const FragranceDetails = ({
       </div>
     </div>
     <CommentForm id={productId} />
-    <Opinions />
+    <Opinions id={productId}/>
   </>
 );
 
 export async function getServerSideProps({ params: { id } }) {
-  // const topWoman = await fetchApi(
-  //   `${baseUrl}/products/list?categoryId=cat1230039&pageSize=10`
-  // );
-  // const topMan = await fetchApi(
-  //   `${baseUrl}/products/list?categoryId=cat1230040&pageSize=10`
-  // );
 
   const allFragrances = await fetchApi(
     `${baseUrl}/products/list?categoryId=cat160006&pageSize=200`

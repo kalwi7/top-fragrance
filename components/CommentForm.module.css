@@ -2,7 +2,8 @@
   max-width: 50rem;
   margin: 0 auto;
   padding: 1.2rem;
-  background-color: rgb(247, 240, 231);
+  background-color: rgb(255, 255, 255);
+  border: 1px solid rgb(214, 214, 214);
   border-radius: 10px;
 }
 

@@ -5,3 +5,8 @@ a:visited{
     color: black;
 
 } 
+
+body {
+    font-family: 'Nunito', sans-serif;
+    background-color: #ecf4fa;
+  }

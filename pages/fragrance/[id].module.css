@@ -1,5 +1,10 @@
 .wrapper {
   display: flex;
+  background-color: white;
+  border: 1px solid rgb(214, 214, 214);
+  box-shadow: 2px 2px 4px #d2c5c5;
+  border-radius: 5px;
+  margin-bottom: 2rem;
 }
 
 .imgWrapper {
@@ -10,7 +15,7 @@
 }
 
 .description {
-  background-color: #ffe2cb;
+  background-color: #ecf4fa;
   padding: 1rem 2rem;
 }
 
