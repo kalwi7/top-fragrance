@@ -53,6 +53,9 @@ const CommentForm = ({ id }) => {
   const formContent = (
     <form className={classes.form} onSubmit={formSubmitHandler}>
       <div className={InputClasses}>
+        <h3 className={classes.title}>
+          What do You think about this fragrance?
+        </h3>
         <label htmlFor="name">Name</label>
         <input ref={nameInput} type="text" id="name" />
         <label htmlFor="opinion">Your opinion</label>

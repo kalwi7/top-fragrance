@@ -1,6 +1,7 @@
 export const filterData = [
   {
     items: [
+      { name: "---" },
       { name: "For men", value: "cat1230040" },
       { name: "For women", value: "cat1230039" },
     ],
@@ -9,6 +10,7 @@ export const filterData = [
   },
   {
     items: [
+      { name: "---" },
       { name: "20", value: "20" },
       { name: "40", value: "40" },
       { name: "60", value: "60" },
@@ -23,6 +25,7 @@ export const filterData = [
   },
   {
     items: [
+      { name: "---" },
       { name: "30", value: "30" },
       { name: "50", value: "50" },
       { name: "70", value: "70" },
@@ -41,6 +44,7 @@ export const filterData = [
   },
   {
     items: [
+      { name: "---" },
       { name: "Lowest Price", value: "price:0" },
       { name: "Highest Price", value: "price:1" },
       { name: "Best Selling", value: "P_BEST_SELLING:1" },

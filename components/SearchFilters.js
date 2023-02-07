@@ -1,6 +1,8 @@
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { useRouter } from "next/router";
 import image from "next/image";
+import classes from "./SearchFilters.module.css";
+
 import { getFilterValues, filterData } from "../utils/filterData";
 
 const SearchFilters = () => {
@@ -23,11 +25,14 @@ const SearchFilters = () => {
   };
 
   return (
-    <div>
+    <div className={classes.wrapper}>
       {filters?.map((filter) => (
-        <div>
-          <label for="filters">{filter.placeholder}</label>
+        <div className={classes.item}>
+          <label className={classes.label} for="filters">
+            {filter.placeholder}
+          </label>
           <select
+            className={classes.select}
             onChange={(e) =>
               searchProperties({ [filter.queryName]: e.target.value })
             }
@@ -35,7 +40,11 @@ const SearchFilters = () => {
             id="filters"
           >
             {filter?.items?.map((item) => (
-              <option key={item.value} value={item.value}>
+              <option
+                className={classes.option}
+                key={item.value}
+                value={item.value}
+              >
                 {item.name}
               </option>
             ))}

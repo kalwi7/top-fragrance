@@ -16,11 +16,11 @@ const Search = ({ fragrancies }) => {
         className={classes.searchText}
         onClick={() => setSearchFilters((prevFilters) => !prevFilters)}
       >
-        Search Fragrance
+        Search Fragrance ▼
       </div>
       {searchFilters && <SearchFilters />}
-      <h2>Fragrances {router.query.categoryId}</h2>
-      <div>
+      <h2>Resoults</h2>
+      <div className={classes.fragrances}>
         {fragrancies.map((fragrance) => (
           <Fragrance fragrance={fragrance} id={fragrance.productId} />
         ))}

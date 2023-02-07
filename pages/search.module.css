@@ -1,5 +1,6 @@
 .searchBar {
-  background-color: rgb(245, 245, 245);
+  /* background-color: rgb(245, 245, 245); */
+  background-color: #0e0e0e;
   text-align: center;
 }
 
@@ -8,4 +9,10 @@
   cursor: pointer;
   padding: 0.5rem 0;
   font-weight: 700;
+  color: white;
+}
+
+.fragrances {
+  max-width: 800px;
+  margin: 0 auto;
 }

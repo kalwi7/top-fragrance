@@ -1,12 +1,20 @@
+* {
+  box-sizing: border-box;
+}
 
 a:link,
-a:visited{
-    text-decoration: none;
-    color: black;
-
-} 
+a:visited {
+  text-decoration: none;
+}
 
 body {
-    font-family: 'Nunito', sans-serif;
-    background-color: #ecf4fa;
-  }
+  font-family: "Nunito", sans-serif;
+  /* background-color: #ecf4fa; */
+  background-color: #0e0e0e;
+  box-sizing: border-box;
+}
+
+h1,
+h2 {
+  color: rgb(255, 187, 0);
+}

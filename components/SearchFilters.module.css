@@ -1,0 +1,25 @@
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.item {
+  margin: 0.7rem;
+}
+
+.label {
+  margin-right: 0.5rem;
+  color: white;
+}
+
+.option {
+}
+
+.select {
+  min-width: 100px;
+  padding: 0.1rem;
+  border: 1px solid rgb(214, 214, 214);
+  border-radius: 5px;
+  text-align: center;
+  font-size: 1rem;
+}

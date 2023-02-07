@@ -1,36 +1,43 @@
-.cardNumber{
-    font-size: 3rem;
-    margin: 1rem;
-    min-width: 3rem;
+.cardNumber {
+  /* color: #0e0e0e; */
+  font-size: 3rem;
+  margin: 1rem;
+  min-width: 3rem;
+  text-align: center;
 }
 
-.wrapper{
-    display: flex;
-    /* flex-wrap: wrap; */
-    align-items: center;
-    cursor: pointer;
-    width: 100%;
-    margin: 1rem;
-    border-radius: 5px;
-    background-color: white;
-    border: 1px solid rgb(214, 214, 214);
-    box-shadow: 2px 2px 4px #d2c5c5;
+.wrapper {
+  display: flex;
+  /* flex-wrap: wrap; */
+  align-items: center;
+  cursor: pointer;
+  max-width: 100%;
+  margin: 1rem;
+  border-radius: 5px;
+  background-color: white;
+  /* border: 1px solid rgb(214, 214, 214); */
+  box-shadow: 2px 2px 4px #000000;
+  color: #0e0e0e;
 }
-
-
-
 
 .description {
- padding: 1.5rem;
+  padding: 1.5rem;
+  text-align: left;
 }
 
-
-.description span{
-    display: block;
+.description span {
+  display: block;
 }
 
-.description h3{
-    font-size: 1.1rem;
-    font-weight: 700;
-    margin-top: 2px;
+.description h3 {
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin-top: 2px;
+}
+
+@media only screen and (max-width: 500px) {
+  .wrapper {
+    flex-direction: column;
+    width: auto;
+  }
 }
