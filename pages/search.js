@@ -23,7 +23,11 @@ const Search = ({ fragrancies }) => {
       <h2>Resoults</h2>
       <div className={classes.fragrances}>
         {fragrancies.map((fragrance) => (
-          <Fragrance fragrance={fragrance} id={fragrance.productId} />
+          <Fragrance
+            key={fragrance.productId}
+            fragrance={fragrance}
+            id={fragrance.productId}
+          />
         ))}
       </div>
       {fragrancies.length === 0 && "No resuls"}

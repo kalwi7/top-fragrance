@@ -6,7 +6,7 @@ const Opinions = ({ id, opinions }) => {
     <ul className={classes.list}>
       {opinions.length > 0
         ? opinions.map((opinion) => {
-            return <OpinionItem opinions={opinion} />;
+            return <OpinionItem key={id} opinions={opinion} />;
           })
         : "There are no reviews yet"}
     </ul>

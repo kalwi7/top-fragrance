@@ -27,7 +27,7 @@ const SearchFilters = () => {
   return (
     <div className={classes.wrapper}>
       {filters?.map((filter) => (
-        <div className={classes.item}>
+        <div key={filter.placeholder} className={classes.item}>
           <label className={classes.label} for="filters">
             {filter.placeholder}
           </label>
