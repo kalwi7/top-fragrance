@@ -16,10 +16,28 @@
 }
 
 .select {
-  min-width: 100px;
+  min-width: 140px;
   padding: 0.1rem;
   border: 1px solid rgb(214, 214, 214);
   border-radius: 5px;
   text-align: center;
   font-size: 1rem;
+}
+
+@media only screen and (max-width: 850px) {
+  .wrapper {
+    flex-wrap: wrap;
+  }
+
+  .item {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    min-width: 30%;
+  }
+
+  .label {
+    margin-bottom: 0.5rem;
+    margin-right: 0;
+  }
 }

@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&display=swap");
+
 * {
   box-sizing: border-box;
 }
@@ -9,7 +11,6 @@ a:visited {
 
 body {
   font-family: "Nunito", sans-serif;
-  /* background-color: #ecf4fa; */
   background-color: #0e0e0e;
   box-sizing: border-box;
 }

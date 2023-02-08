@@ -27,16 +27,32 @@ const Navbar = () => {
               : classes["navigationList"]
           }
         >
-          <Link href="/" passHref>
+          <Link
+            href="/"
+            passHref
+            onClick={() => setIsNavExpanded(!isNavExpanded)}
+          >
             <li className={classes.navigationItem}>Home</li>
           </Link>
-          <Link href="/search" passHref>
+          <Link
+            href="/search"
+            onClick={() => setIsNavExpanded(!isNavExpanded)}
+            passHref
+          >
             <li className={classes.navigationItem}>Search</li>
           </Link>
-          <Link href="/search?categoryId=cat1230040" passHref>
+          <Link
+            href="/search?categoryId=cat1230040"
+            onClick={() => setIsNavExpanded(!isNavExpanded)}
+            passHref
+          >
             <li className={classes.navigationItem}>For Men</li>
           </Link>
-          <Link href="/search?categoryId=cat1230039" passHref>
+          <Link
+            href="/search?categoryId=cat1230039"
+            onClick={() => setIsNavExpanded(!isNavExpanded)}
+            passHref
+          >
             <li className={classes.navigationItem}>For Women</li>
           </Link>
         </ul>

@@ -1,7 +1,7 @@
 import { baseUrl, fetchApi } from "../../utils/fetchApi";
 import ReactHtmlParser from "react-html-parser";
 import classes from "./[id].module.css";
-import Image from "next/image";
+// import Image from "next/image";
 import CommentForm from "../../components/CommentForm";
 import Opinions from "../../components/Opinions";
 import axios from "axios";

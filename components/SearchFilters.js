@@ -1,6 +1,6 @@
 import { useState } from "react";
 import { useRouter } from "next/router";
-import image from "next/image";
+// import image from "next/image";
 import classes from "./SearchFilters.module.css";
 
 import { getFilterValues, filterData } from "../utils/filterData";

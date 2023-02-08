@@ -1,14 +1,15 @@
 import { useState } from "react";
-import { useRouter } from "next/router";
-import Image from "next/image";
+// import { useRouter } from "next/router";
+// import Image from "next/image";
 import SearchFilters from "../components/SearchFilters";
 import classes from "./search.module.css";
 import Fragrance from "../components/Fragrance";
 import { fetchApi, baseUrl } from "../utils/fetchApi";
+import { FaAngleDoubleDown } from "react-icons/fa";
 
 const Search = ({ fragrancies }) => {
   const [searchFilters, setSearchFilters] = useState(false);
-  const router = useRouter();
+  // const router = useRouter();
 
   return (
     <div className={classes.searchBar}>
@@ -16,7 +17,7 @@ const Search = ({ fragrancies }) => {
         className={classes.searchText}
         onClick={() => setSearchFilters((prevFilters) => !prevFilters)}
       >
-        Search Fragrance ▼
+        Search Fragrance <FaAngleDoubleDown />
       </div>
       {searchFilters && <SearchFilters />}
       <h2>Resoults</h2>

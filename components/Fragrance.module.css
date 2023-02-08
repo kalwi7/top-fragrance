@@ -1,5 +1,4 @@
 .cardNumber {
-  /* color: #0e0e0e; */
   font-size: 3rem;
   margin: 1rem;
   min-width: 3rem;
@@ -8,21 +7,32 @@
 
 .wrapper {
   display: flex;
-  /* flex-wrap: wrap; */
   align-items: center;
   cursor: pointer;
   max-width: 100%;
   margin: 1rem;
   border-radius: 5px;
   background-color: white;
-  /* border: 1px solid rgb(214, 214, 214); */
   box-shadow: 2px 2px 4px #000000;
   color: #0e0e0e;
+  position: relative;
+}
+
+.wrapper::after {
+  content: "";
+  position: absolute;
+  background-color: rgb(255, 187, 0);
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 5px;
+  border-radius: 5px;
 }
 
 .description {
   padding: 1.5rem;
   text-align: left;
+  width: 100%;
 }
 
 .description span {
@@ -39,5 +49,9 @@
   .wrapper {
     flex-direction: column;
     width: auto;
+  }
+
+  .image {
+    margin-top: 1rem;
   }
 }
