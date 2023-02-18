@@ -17,44 +17,47 @@ const FragranceDetails = ({
     currentSku: { listPrice, skuImages, size },
     brand,
   },
-}) => (
-  <>
-    <div className={classes.wrapper}>
-      <div className={classes.imgWrapper}>
-        <img
-          className={classes.image}
-          src={skuImages.image450}
-          alt={displayName}
-        />
-      </div>
-      <div className={classes.description}>
-        <span>{brand.displayName}</span>
-        <h1>{displayName}</h1>
-        <div className={classes.details}>
-          <p>
-            <span>Rating:</span> {rating} ({reviews} reviews)
-          </p>
-          <p>
-            <span>Price:</span> {listPrice} for {size}
-          </p>
-        </div>
-        <div>{ReactHtmlParser(longDescription)}</div>
-      </div>
-    </div>
-    <CommentForm id={productId} />
-    <Opinions
-      opinions={opinions.filter((opinion) => opinion.id === productId)}
-      id={productId}
-    />
-  </>
-);
+}) => {
 
+
+  return (
+    <>
+
+      <div className={classes.wrapper}>
+        <div className={classes.imgWrapper}>
+          <img
+            className={classes.image}
+            src={skuImages.image450}
+            alt={displayName}
+          />
+        </div>
+        <div className={classes.description}>
+          <span>{brand.displayName}</span>
+          <h1>{displayName}</h1>
+          <div className={classes.details}>
+            <p>
+              <span>Rating:</span> {rating} ({reviews} reviews)
+            </p>
+            <p>
+              <span>Price:</span> {listPrice} for {size}
+            </p>
+          </div>
+          <div>{ReactHtmlParser(longDescription)}</div>
+        </div>
+      </div>
+      <CommentForm id={productId} />
+      <Opinions
+        opinions={opinions.filter((opinion) => opinion.id === productId)}
+        id={productId}
+      />
+    </>
+  );
+};
 export async function getServerSideProps({ params: { id } }) {
   const allFragrances = await fetchApi(
     `${baseUrl}/products/list?categoryId=cat160006&pageSize=200`
   );
 
-  // cat160006
   const currentFragrance = allFragrances.products.find(
     (el) => el.productId == id
   );
@@ -76,9 +79,6 @@ export async function getServerSideProps({ params: { id } }) {
       text: res.data[key].opinion,
     });
   }
-  // const currentProductOpinions = opinions.filter(
-  //   (opinion) => opinion.id === id
-  // );
 
   return {
     props: {

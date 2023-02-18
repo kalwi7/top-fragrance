@@ -19,3 +19,8 @@ h1,
 h2 {
   color: rgb(255, 187, 0);
 }
+
+#nprogress .bar {
+  background: rgb(255, 187, 0) !important;
+  height: 10px !important;
+}

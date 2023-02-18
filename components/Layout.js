@@ -6,17 +6,6 @@ const Layout = ({ children }) => (
   <>
     <Head>
       <title>Top Fragrance</title>
-      {/* <Head>
-        <link
-          href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&display=swap"
-          rel="stylesheet"
-        ></link>
-
-        <style>
-          @import
-          url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;500;700&display=swap');
-        </style>
-      </Head> */}
     </Head>
     <header>
       <Navbar />

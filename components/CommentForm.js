@@ -2,7 +2,6 @@ import { useRef, useState } from "react";
 import classes from "./CommentForm.module.css";
 import axios from "axios";
 
-//Możliwość usprawnienia z useState - lepsze ux, teraz areValide jest true na początku 220 lekcja
 const CommentForm = ({ id }) => {
   const nameInput = useRef();
   const opinionInput = useRef();
